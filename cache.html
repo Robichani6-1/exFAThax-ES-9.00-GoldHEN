@@ -1,0 +1,13 @@
+<html manifest="cache.manifest">
+<html lang="es">  
+<head>
+<title>exFAThax-ES 9.00 + GoldHEN</title>
+<link rel="stylesheet" href="style.css">
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Instalando exploit en caché: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Exploit instalado en caché correctamente ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Apague la conexión a internet de su PS4, si lo desea y vuelva al Navegador Web";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<div id=msgs class=info></div>
+</html>

